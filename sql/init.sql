@@ -124,7 +124,7 @@ LEFT JOIN pedidos p ON p.cliente_id = c.id
 GROUP BY c.id, c.nome;
 
 --------------------------------------------------------------------------------
--- DADOS DE TESTE
+-- DADOS INICIAIS DE TESTE
 --------------------------------------------------------------------------------
 BEGIN
     sp_inserir_cliente('Thales', 28);

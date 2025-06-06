@@ -1,4 +1,4 @@
-# 📦 Sistema de Cadastro de Clientes com Relatórios (PL/SQL + Oracle XE)
+# 📦 Sistema de Cadastro de Clientes com Relatórios(PL/SQL + Oracle)
 
 Este projeto foi criado com o objetivo de estudar o uso de PL/SQL com Oracle XE, usando Docker para ambiente local e DBeaver como ferramenta de consulta.
 
@@ -8,5 +8,3 @@ Este projeto foi criado com o objetivo de estudar o uso de PL/SQL com Oracle XE,
 - Functions para cálculo de idade e total de pedido
 - View de total de pedidos por cliente
 - Ambiente pronto via Docker
-
-

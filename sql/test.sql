@@ -1,14 +1,8 @@
 --------------------------------------------------------------------------------
 --EXEMPLOS DE TESTES
 --------------------------------------------------------------------------------
-
--- Ver clientes
 SELECT * FROM clientes;
-
--- Ver Produtos
 SELECT * FROM produtos;
-
--- Ver pedidos
 SELECT * FROM pedidos;
 
 -- Calcular total de um pedido
@@ -16,8 +10,10 @@ SELECT fn_total_pedido(4) FROM dual;
 
 -- Ver relatórios
 SELECT * FROM vw_total_pedidos_cliente;
-SELECT * FROM vw_total_gasto_cliente;
+SELECT * FROM vw_produtos_mais_vendidos;
 
+-- Ver logs
+SELECT * FROM log_pedidos;
 
 -- Inser cliente
 BEGIN

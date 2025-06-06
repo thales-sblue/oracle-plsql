@@ -1,3 +1,7 @@
+--------------------------------------------------------------------------------
+--EXEMPLOS DE TESTES
+--------------------------------------------------------------------------------
+
 -- Ver clientes
 SELECT * FROM clientes;
 
@@ -10,8 +14,9 @@ SELECT * FROM pedidos;
 -- Calcular total de um pedido
 SELECT fn_total_pedido(4) FROM dual;
 
--- Ver relatório
+-- Ver relatórios
 SELECT * FROM vw_total_pedidos_cliente;
+SELECT * FROM vw_total_gasto_cliente;
 
 
 -- Inser cliente

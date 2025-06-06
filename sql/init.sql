@@ -123,6 +123,17 @@ FROM clientes c
 LEFT JOIN pedidos p ON p.cliente_id = c.id
 GROUP BY c.id, c.nome;
 
+-- Total gasto por cliente
+CREATE OR REPLACE VIEW vw_total_gasto_cliente AS
+SELECT 
+    c.id AS cliente_id,
+    c.nome,
+    SUM(fn_total_pedido(p.id)) AS total_gasto
+FROM clientes c
+LEFT JOIN pedidos p ON p.cliente_id = c.id
+GROUP BY c.id, c.nome
+ORDER BY total_gasto DESC;
+
 --------------------------------------------------------------------------------
 -- DADOS INICIAIS DE TESTE
 --------------------------------------------------------------------------------

@@ -28,6 +28,6 @@ END;
 
 --Inserir pedidos
 BEGIN    
-    sp_criar_pedido(4, 3, 3);
+    sp_criar_pedido(3, 3, 2);
 END;
 /

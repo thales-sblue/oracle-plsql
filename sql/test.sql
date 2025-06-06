@@ -18,16 +18,16 @@ SELECT * FROM vw_total_pedidos_cliente;
 BEGIN
 	sp_inserir_cliente('João', 35);	 
 END;
-
+/
 
 --Inserir produtos
 BEGIN	
 	sp_inserir_produto('Teclado', 300);
 END;
-
+/
 
 --Inserir pedidos
 BEGIN    
     sp_criar_pedido(4, 3, 3);
 END;
-
+/
